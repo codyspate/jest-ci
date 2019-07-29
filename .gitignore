@@ -12,3 +12,4 @@ build
 yarn.lock
 yarn-error.log
 .env
+coverage
