@@ -34,7 +34,7 @@ export const loansToCsvV2 = async () => {
 
     writeToS3('location', csv);
   } catch (err) {
-    console.log(err);
+    // console.log(err);
   }
 };
 
@@ -49,6 +49,6 @@ export const loansToCsvV3 = async context => {
 
     context.s3Service.writeToS3('location', csv);
   } catch (err) {
-    console.log(err);
+    // console.log(err);
   }
 };

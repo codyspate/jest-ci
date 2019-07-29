@@ -1,26 +1,23 @@
 import * as mockLoansService from './mock-loans-service';
-import {loansToCsvV3} from '../utils.js';
+import { loansToCsvV3 } from '../utils/loan-to-csv';
 
 const mockedLoan = () => {
-    return { 
-      clientId: 'hi',
-      creditType:'Combined'
-    }
-}
+  return {
+    clientId: 'hi',
+    creditType: 'Combined'
+  };
+};
 
 describe('A loan to csv test', () => {
-    it('will work happily', async () => {
+  it('will work happily', async () => {
+    const mls = mockLoansService;
 
-        const mls = mockLoansService
+    mls.add(mockedLoan());
 
-        mls.add(mockedLoan())
+    const context = { loanService: mls };
 
-        const context = { loanService: mls }
+    const results = loansToCsvV3(context); // eslint-disable-line
 
-        const results = loansToCsvV3(context)
-
-        // expect( results ).toBe(5)
-    })
-})
-    
-  
+    // expect( results ).toBe(5)
+  });
+});

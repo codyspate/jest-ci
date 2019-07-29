@@ -1,5 +1,5 @@
 import { addAandB } from '../index';
-import { someOtherDevChangesTheLoan } from '../utils.js';
+import { someOtherDevChangesTheLoan } from '../utils';
 import Loan from '../__mocks__/loan';
 
 // Pretend its a DB
