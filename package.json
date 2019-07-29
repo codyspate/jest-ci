@@ -1,0 +1,29 @@
+{
+  "name": "bb-jest-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "coverage": "jest --verbose --coverage",
+    "start": "babel-node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-jest": "^24.8.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.14.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2"
+  }
+}
