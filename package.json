@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint 'src/**'",
     "test": "jest --verbose",
     "coverage": "jest --verbose --coverage",
     "start": "babel-node src/index.js"
