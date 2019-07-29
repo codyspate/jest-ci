@@ -11,7 +11,7 @@ loan.set({
   b: 3
 });
 
-describe('Seeeeeeee', () => {
+describe('Deeeeeee', () => {
   // it('Not doing anything', () => {});
   it('Should add two things', () => {
     someOtherDevChangesTheLoan(loan);
