@@ -1,7 +1,7 @@
 const loansFromDynamo = () => {};
 const writeToS3 = () => {};
 
-const loansToCsv = async () => {
+export const loansToCsv = async () => {
   const loans = loansFromDynamo();
 
   const csv = loans.map(loan => {
@@ -24,7 +24,7 @@ const renderLoan = loan => {
   };
 };
 
-const loansToCsvV2 = async () => {
+export const loansToCsvV2 = async () => {
   try {
     const loans = loansFromDynamo();
 
@@ -39,7 +39,7 @@ const loansToCsvV2 = async () => {
 };
 
 // -------------------------------------------------
-const loansToCsvV3 = async context => {
+export const loansToCsvV3 = async context => {
   try {
     const loans = context.loansService.loansFromDynamo();
 
